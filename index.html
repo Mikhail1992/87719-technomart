@@ -4,8 +4,9 @@
     <meta charset="utf-8">
     <title>Главная</title>
     <link rel="stylesheet" href="css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Cuprum:400,700,400italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
   </head>
-  <body>
+  <body class="inner-bg">
     <header class="main-header">
       <div class="top-header">
         <div class="container">
@@ -13,10 +14,10 @@
             <img src="img/logo.png" alt="Техномарт" width="220" height="42">
           </div>
           <form class="main-search">
-            <input id="search" type="search" placeholder="Поиск"><label for="search"></label>
+            <input id="search" type="search" placeholder="Поиск:"><label for="search"></label>
           </form>
-          <a class="main-bookmark" href="#">Закладки</a>
-          <a class="shop-cart" href="#">Корзина</a>
+          <a class="main-bookmark" href="#">Закладки: 0</a>
+          <a class="shop-cart" href="#">Корзина: 0</a>
           <a class="place-order" href="#">Оформить заказ</a>
         </div>
       </div>
@@ -24,15 +25,15 @@
         <div class="container">
           <div class="header-descr">
             <h1 class="main-title">Интернет-магазин
-            строитльных материалов
+            строительных материалов<br>
             и инструментов для ремонта</h1>
           </div>
           <div class="contacts">
             <div class="phone">
-              +7(812)555-05-55
+              +7 (812) 555-05-55
             </div>
             <div class="address">
-              г.Санкт-Петербург, ул.Б.Конюшенная, д.19/8
+              г. Санкт-Петербург, ул.Б. Конюшенная, д. 19/8
             </div>
           </div>
           <div class="auth">
@@ -69,17 +70,17 @@
     </header>
     <main class="main">
       <div class="container">
-      <section class="services">
+      <section class="services clearfix">
         <div class="block materials">
           <div>Материалы</div>
           <a href="#">На любой вкус</a>
         </div>
         <div class="block tool">
-          <span>Инструмент</span>
+          <div>Инструмент</div>
           <a href="#">На все случаи</a>
         </div>
         <div class="block technic">
-          <span>Техника</span>
+          <div>Техника</div>
           <a href="#">Для стройки</a>
         </div>
         <div class="slider">
@@ -107,11 +108,11 @@
           </div>
         </div>
         <div class="block discounts">
-          <span>Скидки 50%</span>
+          <div>Скидки 50%</div>
           <a href="#">На 350 товаров</a>
         </div>
         <div class="block transfer">
-          <span>Доставка</span>
+          <div>Доставка</div>
           <a href="#">Бесплатно</a>
         </div>
       </section>
@@ -119,7 +120,7 @@
         <div>Популярный товары:</div>
         <a class="btn popular-btn" href="#">Все популярные товары</a>
       </div>
-      <section class="products">
+      <section class="products clearfix">
         <article class="card-product">
           <img src="img/bosch-bfg-9000.jpg" alt="Bosch bfg 9000" width="184" height="164">
           <div clas="product-name">Перфоратор <span class="uppercase">Bosch
@@ -153,7 +154,7 @@
         <div>Популярный производители:</div>
         <a class="btn popular-btn" href="#">Все производители</a>
       </div>
-      <div class="brands">
+      <div class="brands clearfix">
         <a href="" class="card-product"><img src="img/bosch-logo.png" alt="Bosch" width="126" height="37"></a>
         <a href="" class="card-product"><img src="img/Makita.png" alt="Makita" width="123" height="40"></a>
         <a href="" class="card-product"><img src="img/Dewalt.png" alt="Dewalt" width="146" height="44"></a>
@@ -215,8 +216,9 @@
           </div>
         </div>
       </div>
-      <section class="contacts">
-        <div class="container">
+      </div>
+      <section class="contact">
+        <div class="container clearfix">
         <div class="column-left">
           <h2>Коспания "Техномарт"</h2>
           <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта
@@ -244,11 +246,11 @@
         </div>
         </div>
       </section>
-      </div>
+
     </main>
     <footer class="main-footer">
       <div class="footer-top">
-        <div class="container">
+        <div class="container clearfix">
          <div class="footer-left">
            <a href="index.html"><img src="img/logo-bottom.png" alt="Техномарт" width="220" height="63"></a>
            <div>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 +7 (812) 555-05-55</div>
@@ -270,8 +272,8 @@
           </div>
         </div>
       </div>
-      <div class="footer-bottom">
-        <div class="container">
+      <div class="footer-bottom clearfix">
+        <div class="container clearfix">
           <div class="copyright">
             © 2010–2016 Компания «Техномарт»<br>
             Все права защищены

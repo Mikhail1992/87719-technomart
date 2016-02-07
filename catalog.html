@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>Каталог</title>
     <link rel="stylesheet" href="css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Cuprum:400,700,400italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
   </head>
   <body>
     <header class="main-header">
@@ -15,8 +16,8 @@
           <form class="main-search">
             <input type="search" placeholder="Поиск"><label for="search"></label>
           </form>
-          <a class="main-bookmark" href="#">Закладки</a>
-          <a class="shop-cart" href="#">Корзина</a>
+          <a class="main-bookmark" href="#">Закладки: 0</a>
+          <a class="shop-cart" href="#">Корзина: 0</a>
           <a class="place-order" href="#">Оформить заказ</a>
         </div>
       </div>
@@ -29,10 +30,10 @@
           </div>
           <div class="contacts">
             <div class="phone">
-              +7(812)555-05-55
+              +7 (812) 555-05-55
             </div>
             <div class="address">
-              г.Санкт-Петербург, ул.Б.Конюшенная, д.19/8
+              г. Санкт-Петербург, ул.Б. Конюшенная, д. 19/8
             </div>
           </div>
           <div class="auth">
@@ -70,7 +71,7 @@
       </div>
     </header>
     <main>
-      <div class="container">
+      <div class="container clearfix">
         <ul class="breadcrumbs">
           <li><a href="#"></a></li>
           <li><a href="#">Каталог</a></li>
@@ -122,71 +123,72 @@
           </section>
           <button class="btn" type="submit">Показать</button>
         </form>
-        <section class="products">
-          <article class="card-product">
+        <section class="products catalog">
+          <article class="card-product all">
           <img src="img/bosch-bfg-3000.jpg" alt="Bosch bfg 3000" width="127" height="112">
           <div clas="product-name">Перфоратор <span class="uppercase">Bosch
              bfg 3000</span></p>
           <div class="old-price">22500 р.</div>
           <a href="#" class="btn">15500 р.</a>
         </article>
-        <article class="card-product">
+        <article class="card-product all">
           <img src="img/bosch-bfg-6000.jpg" alt="Bosch bfg 6000" width="144" height="128">
           <div clas="product-name">Перфоратор <span class="uppercase">Bosch
              bfg 6000</span></div>
           <div class="old-price">30500 р.</div >
           <a href="#" class="btn">25500 р.</a>
         </article>
-        <article class="card-product">
+        <article class="card-product all">
           <img src="img/bosch-bfg-2000.jpg" alt="Bosch bfg 2000" width="127" height="112">
           <div clas="product-name">Перфоратор <span class="uppercase">Bosch
              bfg 2000</span></div>
           <div class="old-price"></div>
           <a href="#" class="btn">12500 р.</a>
         </article>
-        <article class="card-product">
+        <article class="card-product all">
           <img src="img/bosch-bfg-3000.jpg" alt="Bosch bfg 3000" width="127" height="112">
           <div clas="product-name">Перфоратор <span class="uppercase">Bosch
              bfg 3000</span></p>
           <div class="old-price">22500 р.</div>
           <a href="#" class="btn">15500 р.</a>
         </article>
-        <article class="card-product">
+        <article class="card-product all">
           <img src="img/bosch-bfg-6000.jpg" alt="Bosch bfg 6000" width="144" height="128">
           <div clas="product-name">Перфоратор <span class="uppercase">Bosch
              bfg 6000</span></div>
           <div class="old-price">30500 р.</div >
           <a href="#" class="btn">25500 р.</a>
         </article>
-        <article class="card-product">
+        <article class="card-product all">
           <img src="img/bosch-bfg-2000.jpg" alt="Bosch bfg 2000" width="127" height="112">
           <div clas="product-name">Перфоратор <span class="uppercase">Bosch
              bfg 2000</span></div>
           <div class="old-price"></div>
           <a href="#" class="btn">12500 р.</a>
         </article>
-        <article class="card-product">
+        <article class="card-product all">
           <img src="img/bosch-bfg-3000.jpg" alt="Bosch bfg 3000" width="127" height="112">
           <div clas="product-name">Перфоратор <span class="uppercase">Bosch
              bfg 3000</span></p>
           <div class="old-price">22500 р.</div>
           <a href="#" class="btn">15500 р.</a>
         </article>
-        <article class="card-product">
+        <article class="card-product all">
           <img src="img/bosch-bfg-6000.jpg" alt="Bosch bfg 6000" width="144" height="128">
           <div clas="product-name">Перфоратор <span class="uppercase">Bosch
              bfg 6000</span></div>
           <div class="old-price">30500 р.</div >
           <a href="#" class="btn">25500 р.</a>
         </article>
-        <article class="card-product">
+        <article class="card-product all">
           <img src="img/bosch-bfg-2000.jpg" alt="Bosch bfg 2000" width="127" height="112">
           <div clas="product-name">Перфоратор <span class="uppercase">Bosch
              bfg 2000</span></div>
           <div class="old-price"></div>
           <a href="#" class="btn">12500 р.</a>
         </article>
-          <div class="pagination">
+        </section>
+        <div class="pagination">
             <ul>
               <li>1</li>
               <li><a class="blacksquare" href="#">2</a></li>
@@ -194,7 +196,6 @@
               <li><a class="blacksquare" href="#">Следующая</a></li>
             </ul>
           </div>
-        </section>
         <section class="about-product">
           <h2 class="aboun-name">Пара слов о перфораторах</h2>
           <p>Перфоратор — универсальный строительный инструмент. Предназначен для
@@ -209,7 +210,7 @@
     </main>
     <footer class="main-footer">
       <div class="footer-top">
-        <div class="container">
+        <div class="container clearfix">
          <div class="footer-left">
            <a href="index.html"><img src="img/logo-bottom.png" alt="Техномарт" width="220" height="63"></a>
            <div>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 +7 (812) 555-05-55</div>
@@ -231,10 +232,10 @@
           </div>
         </div>
       </div>
-      <div class="footer-bottom">
-        <div class="container">
+      <div class="footer-bottom clearfix">
+        <div class="container clearfix">
           <div class="copyright">
-            © 2010–2016 Компания «Техномарт»
+            © 2010–2016 Компания «Техномарт»<br>
             Все права защищены
           </div>
           <div class="footer-social">
