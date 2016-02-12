@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link href='https://fonts.googleapis.com/css?family=Cuprum:400,700,400italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
   </head>
   <body class="inner-bg">
     <header class="main-header">
@@ -70,7 +71,7 @@
       </div>
     </header>
     <main class="main">
-      <div class="container">
+    <div class="container">
       <section class="services clearfix">
         <div class="block materials">
           <div>Материалы</div>
@@ -84,30 +85,41 @@
           <div>Техника</div>
           <a href="#">Для стройки</a>
         </div>
-        <div class="slider">
-          <input id="p1" name="point" type="radio">
-          <input id="p2" name="point" type="radio">
-          <div class="index-slide">
-            <div class="index-slider title1">
-              <div class="slider-caption">
-                <h3>Перфораторы</h3>
-                <span class="caption">Настоящие мужские игрушки</span>
-              </div>
-              <a href="#" class="slider-btn btn">Открыть каталог</a>
+        
+
+
+<div class="slider">
+        <input type="radio" id="btn-1" name="toggle" checked>
+        <input type="radio" id="btn-2" name="toggle">
+        <div class="slider-controls">
+          <label for="btn-1"></label>
+          <label for="btn-2"></label>
+        </div>
+        <div class="arrows">
+          <label for="btn-1"></label>
+          <label for="btn-2"></label>
+        </div>
+        <div class="slides">
+          <div class="slide">
+            <div class="slide-text">
+              <div class="slide-title">Перфораторы</div>
+              <p>Настоящие мужские игрушки</p>
             </div>
-            <div class="index-slider title1">
-              <div class="slider-caption">
-                <h3>Перфораторы</h3>
-                <span class="caption">Настоящие мужские игрушки</span>
-              </div>
-              <a href="#" class="slider-btn btn">Открыть каталог</a>
-            </div>
+            <a class="btn-slide btn" href="#">Открыть каталог</a>
           </div>
-          <div class="sliders-controls">
-          	<label for="p1"></label>
-          	<label for="p2"></label>
+          <div class="slide">
+            <div class="slide-text">
+              <div class="slide-title">Дрели</div>
+              <p>Соседям на радость!</p>
+            </div>
+            <a class="btn-slide btn" href="#">Открыть каталог</a>
           </div>
         </div>
+      </div>
+
+
+
+
         <div class="block discounts">
           <div>Скидки 50%</div>
           <a href="#">На 350 товаров</a>
@@ -121,35 +133,55 @@
         <div>Популярные товары:</div>
         <a class="btn popular-btn" href="#">Все популярные товары</a>
       </div>
-      <section class="products clearfix">
-        <article class="card-product index-product">
-          <img src="img/bosch-bfg-9000.jpg" alt="Bosch bfg 9000" width="184" height="164">
-          <div clas="product-name">Перфоратор <span class="uppercase">Bosch
-             bfg 9000</span></div>
-          <div class="old-price">32500 р.</div>
-          <a href="#" class="btn">25500 р.</a>
-        </article>
-        <article class="card-product index-product">
+      <section class="catalog-items clearfix">
+        <article class="catalog-item">
+        <div class="actions">
+          <a href="#" class="buy">Купить</a>
+          <a href="#" class="bookmark">В закладки</a>
+        </div>
+        <div class="catalog-item-image">
+          <img src="img/bosch-bfg-9000.jpg" alt="Bosch bfg 3000" width="184" height="164">
+        </div>
+        <h2 class="title">Перфоратор BOSCH BFG 9000</h2>
+        <div class="discount">32500 Р.</div>
+        <div class="price">25500 Р.</div>
+      </article>
+      <article class="catalog-item">
+        <div class="actions">
+          <a href="#" class="buy">Купить</a>
+          <a href="#" class="bookmark">В закладки</a>
+        </div>
+        <div class="catalog-item-image">
           <img src="img/bosch-bfg-3000.jpg" alt="Bosch bfg 3000" width="127" height="112">
-          <div clas="product-name">Перфоратор <span class="uppercase">Bosch
-             bfg 3000</span></p>
-          <div class="old-price">22500 р.</div>
-          <a href="#" class="btn">15500 р.</a>
-        </article>
-        <article class="card-product index-product">
-          <img src="img/bosch-bfg-6000.jpg" alt="Bosch bfg 6000" width="144" height="128">
-          <div clas="product-name">Перфоратор <span class="uppercase">Bosch
-             bfg 6000</span></div>
-          <div class="old-price">30500 р.</div >
-          <a href="#" class="btn">25500 р.</a>
-        </article>
-        <article class="card-product index-product">
-          <img src="img/bosch-bfg-2000.jpg" alt="Bosch bfg 2000" width="127" height="112">
-          <div clas="product-name">Перфоратор <span class="uppercase">Bosch
-             bfg 2000</span></div>
-          <div class="old-price"></div>
-          <a href="#" class="btn">12500 р.</a>
-        </article>
+        </div>
+        <h2 class="title">Перфоратор BOSCH BFG 3000</h2>
+        <div class="discount">22 500 Р.</div>
+        <div class="price">15500 Р.</div>
+      </article>
+      <article class="catalog-item">
+        <div class="actions">
+          <a href="#" class="buy">Купить</a>
+          <a href="#" class="bookmark">В закладки</a>
+        </div>
+        <div class="catalog-item-image">
+          <img src="img/bosch-bfg-6000.jpg" alt="Bosch bfg 3000" width="144" height="128">
+        </div>
+        <h2 class="title">Перфоратор BOSCH BFG 6000</h2>
+        <div class="discount">30500 Р.</div>
+        <div class="price">25500 Р.</div>
+      </article>
+      <article class="catalog-item new">
+        <div class="actions">
+          <a href="#" class="buy">Купить</a>
+          <a href="#" class="bookmark">В закладки</a>
+        </div>
+        <div class="catalog-item-image">
+          <img src="img/bosch-bfg-2000.jpg" alt="Bosch bfg 3000" width="127" height="112">
+        </div>
+        <h2 class="title marbottom">Перфоратор BOSCH BFG 2000</h2>
+        <div class="price">12500 Р.</div>
+      </article>
+
       </section>
       <div class="popular clearfix">
         <div>Популярный производители:</div>
@@ -165,59 +197,62 @@
         <a href="" class="card-product"><img src="img/AEG.png" alt="AEG" width="151" height="96"></a>
         <a href="" class="card-product"><img src="img/Metabo.png" alt="Metabo" width="204" height="69"></a>
       </div>
-      <div class="services">
+      </div>
+      <div class="services services-bott">
         <div class="container">
         <h2 class="sub-title">Сервисы</h2>
-        <p>Хороший интернет-магазин отличается от плохого не только ценами!
+        <p>Хороший интернет-магазин отличается от плохого не только ценами!<br>
            Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
         </p>
-        <div class="service-slider">
-          <input id="p1" name="point" type="radio">
+        <div class="service-slider clearfix">
+          <input id="p1" name="point" type="radio" checked>
           <input id="p2" name="point" type="radio">
           <input id="p3" name="point" type="radio">
-          <div class="service-slide">
-            <div class="service-slider title1">
+          <div class="sliders-controls">
+            <label for="p1">Доставка</label>
+            <label for="p2">Гарантия</label>
+            <label for="p3">Кредит</label>
+          </div>
+          <div class="service-slides">
+            <div class="service-slide title1">
               <div class="slider-caption">
                 <h3>Доставка</h3>
-                <span class="description">
-                Мы с удовольствием доставим ваш товар прямо
-                к вашему подъезду совершенно бесплатно!
-                Ведь мы неплохо заработаем,
+                <p class="description">
+                Мы с удовольствием доставим ваш товар прямо<br>
+                к вашему подъезду совершенно бесплатно!<br>
+                Ведь мы неплохо заработаем,<br>
                 поднимая его на ваш на этаж!
-                </span>
+                </p>
               </div>
             </div>
-            <div class="service-slider title2">
+            <div class="service-slide title2">
               <div class="slider-caption">
                 <h3>Гарантия</h3>
-                <span class="description">
-                Если купленный у нас товар поломается или заискрит,
-                а также в случае пожара, спровоцированного его возгаранием,  вы всегда
-                можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.
-                Дом уж восстановите как-нибудь сами.
-                </span>
+                <p class="description">
+                Если купленный у нас товар поломается или заискрит,<br>
+                а также в случае пожара, спровоцированного его возгаранием,<br>
+                вы всегда можете быть уверены в нашей гарантии. Мы обменяем<br>
+                 сгоревший товар на новый.<br>
+                  Дом уж восстановите как-нибудь сами.
+                </p>
               </div>
             </div>
-            <div class="service-slider title3">
+            <div class="service-slide title3">
               <div class="slider-caption">
                 <h3>Кредит</h3>
-                <span class="description">
-                Залезть в долговую яму стало проще!
+                <p class="description">
+                Залезть в долговую яму стало проще!<br>
                 Кредитные консультанты придут вам на помощь.
-                </span>
+                </p>
               </div>
               <a href="#" class="slider-btn btn">Отправить заявку</a>
             </div>
-
           </div>
-          <div class="sliders-controls">
-          	<label for="p1">Доставка</label>
-          	<label for="p2">Гарантия</label>
-          	<label for="p3">Кредит</label>
-          </div>
+          
         </div>
       </div>
       </div>
+      
       <section class="contact">
         <div class="container clearfix">
         <div class="column-left">
