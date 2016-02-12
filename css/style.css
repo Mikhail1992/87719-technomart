@@ -4,7 +4,7 @@ body {
   line-height: 24px;
   color: #000;
   font-weight: normal;
-  font-family: 'Cuprum', "PT Sans", sans-serif;
+  font-family: 'PT Sans', 'Arial', sans-serif;
   padding: 0;
   margin: 0;
 
@@ -24,7 +24,6 @@ body {
   width: 1em;
   margin-right: 0.2em;
   margin-left: 0.2em;
-
   font-weight: normal;
   line-height: 1em;
   font-family: "symbols-technomart";
@@ -33,7 +32,6 @@ body {
   text-decoration: inherit;
   font-style: normal;
   font-variant: normal;
-
   speak: none;
 }
 
@@ -68,6 +66,7 @@ body {
 * {
   box-sizing: border-box;
 }
+
 .clearfix::after {
   content: "";
   display: table;
@@ -78,39 +77,45 @@ body {
   width: 940px;
   margin: 0 auto;
 }
+
 .logo {
   float: left;
   width: 220px;
 }
+
 .main-search {
   width: 270px;
   float: left;
   box-sizing: border-box;
 }
 
-
 .main-bookmark {
   float: left;
   width: 150px;
 }
+
 .shop-cart {
   float: left;
   width: 150px;
 }
+
 .place-order {
   float: right;
   width: 150px;
 }
+
 .header-descr {
   float: left;
   width: 320px;
   padding-right: 20px;
 }
+
 .contacts {
   float: left;
   width: 300px;
   padding-right: 30px;
 }
+
 .auth {
   float: right;
   width: 300px;
@@ -119,34 +124,39 @@ body {
 .main-nav {
   clear: both;
 }
+
 .main-nav li {
   display: inline-block;
 }
+
 .materials {
   float: left;
   width: 300px;
   margin-right: 20px;
   clear: both;
 }
+
 .tool {
   float: left;
   width: 300px;
   margin-right: 20px;
 }
+
 .technic {
   float: right;
   width: 300px;
 }
+
 .slider {
   float: left;
   margin-right: 20px;
-
 }
 .discounts {
   float: right;
   width: 300px;
   margin-top: 20px;
 }
+
 .transfer {
   float: right;
   width: 300px;
@@ -156,6 +166,7 @@ body {
 .popular>div {
   float: left;
 }
+
 .popular>a {
   float: right;
 }
@@ -165,17 +176,14 @@ body {
   margin-right: 20px;
   width: 220px;
 }
+
 .products .card-product:last-child {
   margin-right: 0;
 }
 
-
-
-
 .catalog-items {
   font-size: 0; /* для оформления демонстрации */
-  margin-top: 20px;
-  font-family: 'PT Sans', 'Arial', sans-serif;
+  margin-top: 20px; 
 }
 
 .catalog-item {
@@ -190,6 +198,7 @@ body {
   float: left;
   margin-right: 20px;
 }
+
 .catalog-item:nth-child(4n) {
   margin-right: 0;
 }
@@ -229,40 +238,58 @@ body {
   border-radius: 3px;
   background-color: #63a63e;
 }
+
 .actions .buy::before {
   position: absolute;
+  text-transform: none;
   top: 9px;
-  left: 20px;
+  left: 12px;
   font-family: "symbols-technomart";
   content: "\62";
   font-size: 17px;
   color: #fff;
+  opacity: .3;
 }
+
+.actions .buy:hover::before {
+  opacity: 1;
+}
+
+.actions .buy:active::before {
+  opacity: 1;
+}
+
 .actions .buy {
   box-shadow: inset 0 -3px 0 #367315;
   position: relative;
 }
+
 .actions .buy:hover {
   background-color: #5fbb2d;
 }
+
 .actions .buy:active {
   background-color: #518534;
   border: none;
 }
+
 .actions .bookmark {
-  width: 129px;
+  width: 135px;
   padding: 7px 0;
   color: #63a63e;
   border: 3px solid #63a63e;
   background-color: #fff;
 }
+
 .actions .bookmark:hover {
   border: 3px solid #32425c;
 }
+
 .actions .bookmark:active {
   border: 3px solid #c1c6ce;
   color: rgba(50,66,92,.3);
 }
+
 .catalog-item .actions {
   display: none;
 }
@@ -323,62 +350,75 @@ body {
   margin-bottom: 38px;
 }
 
-
-
 .uppercase {
   text-transform: uppercase;
-  font-family: 'PT Sans', 'Arial', sans-serif;
 }
 .brands {
   clear: both;
 }
+
 .brands .card-product {
   display: block;
   float: left;
   width: 220px;
   margin-right: 20px;
 }
+
 .brands .card-product:nth-child(4n) {
   margin-right: 0;
 }
+
 .column-left {
   float: left;
   width: 540px;
   margin-right: 100px;
 }
+
 .column-right {
   float: right;
   width: 300px;
 }
+
 .footer-left {
   float: left;
   width: 380px;
   margin-right: 10px;
 }
+
 .footer-right {
   float: right;
   width: 550px;
 }
-.footer-right ul li {
-  float: left;
+
+.footer-right ul {
+  font-size: 0;
 }
+
+.footer-right ul li {
+  display: inline-block;
+}
+
 .copyright {
   float: left;
   width: 240px;
   margin-right: 150px;
 }
+
 .footer-social {
   float: left;
   width: 150px;
   margin-right: 100px;
 }
+
 .callback {
   float: left;
   margin-right: 20px;
 }
+
 .callback:last-child {
   margin-right: 0;
 }
+
 .social-btn {
   float: left;
   margin-right: 5px;
@@ -393,6 +433,7 @@ body {
 .social-btn:last-child {
   margin-right: 0;
 }
+
 .breadcrumbs li {
   float: left;
 }
@@ -402,13 +443,16 @@ body {
   width: 220px;
   margin-right: 20px;
 }
+
 .right-filter {
   float: left;
   width: 700px;
 }
+
 .right-filter>* {
   display: inline-block;
 }
+
 .right-filter ul {
   padding: 0;
   margin: 0;
@@ -416,44 +460,53 @@ body {
   width: 460px;
   margin-left: 135px;
 }
+
 .right-filter ul li {
   display: inline-block;
 }
+
 .right-filter a{
   color: rgba(0,0,0,.3);
   font-size: 13px;
-  font-family: 'PT Sans', 'Arial', sans-serif;
   text-transform: uppercase;
   text-decoration: none;
   border-bottom: 1px dotted #ee3643;
 }
+
 .right-filter a:hover {
   color: rgba(0,0,0,1);
   border-bottom: 1px solid #ee3643;
 }
+
 .right-filter a:active {
   color: #ee3643;
   border: none;
 }
+
 .right-filter li:nth-child(1) a{
   margin-right: 70px;
 }
+
 .right-filter li:nth-child(2) {
   margin-right: 62px;
 }
+
 .right-filter li:nth-child(3) {
   margin-right: 45px;
 }
+
 .right-filter li:nth-child(4) {
   position: relative;
   width: 10px;
   height: 10px;
 }
+
 .right-filter li:nth-child(5) {
   position: relative;
   width: 10px;
   height: 10px;
 }
+
 .right-filter li:nth-child(4) a::before {
   position: absolute;
   width: 10px;
@@ -465,12 +518,15 @@ body {
   left: -2px;
   font-size: 23px;
 }
+
 .right-filter li:nth-child(4) a:hover::before {
   color: #000;
 }
+
 .right-filter li:nth-child(4) a:active::before {
   color: #ee3643;
 }
+
 .right-filter li:nth-child(5) a::before {
   position: absolute;
   width: 10px;
@@ -482,58 +538,100 @@ body {
   left: 17px;
   font-size: 23px;
 }
+
 .right-filter li:nth-child(5) a:hover::before {
   color: #000;
 }
+
 .right-filter li:nth-child(5) a:active::before {
   color: #ee3643;
 }
+
 .filter-form {
   float: left;
   margin-right: 20px;
   width: 220px;
-  font-family: 'PT Sans', 'Arial', sans-serif;
 }
+
 .catalog {
   float: right;
   width: 700px;
 }
+
 .catalog .catalog-item{
   margin-right: 20px;
 }
+
 .catalog .catalog-item:nth-child(3n) {
   margin-right: 0;
 }
+
 .card-product {
   float: left;
   width: 220px;
   margin-right: 20px;
 }
+
 .card-product:nth-child(3n) {
   margin-right: 0;
 }
+
 .pagination {
   clear: both;
   float: right;
   width: 700px;
 }
+
 .about-product {
   clear: both;
 }
+
 .pagination li {
   float: left;
 }
+
 .top-header {
   height: 42px;
   background-color: #293449;
 }
+
 .logo {
   line-height: 0;
   box-shadow: 0 5px 0 0 #b52933;
+  width: 220px;
+  height: 42px;
+  background: #ee3643;
+  padding: 12px 50px;
 }
+
+.logo:hover {
+  background-color: #ca2c37;
+}
+
+.logo:active {
+  background-color: #ba2732;
+}
+
+.logo-bottom{
+  line-height: 0;
+  box-shadow: 0 5px 0 0 #b52933;
+  width: 220px;
+  height: 62px;
+  background: #ee3643;
+  padding: 18px 36px;
+  display: inline-block;
+}
+
+.logo-bottom a {
+  padding: 20px 20px;
+  display: inline-block;
+}
+
 .main-header {
   position: relative;
+  font-family: 'Cuprum', sans-serif;
 }
+
 .main-header input[type="search"] {
   border: none;
   background-color: #293449;
@@ -541,8 +639,9 @@ body {
   color: #fff;
   font-size: 17px;
   padding-left: 49px;
-  padding-top: 10px;
-  padding-bottom: 11px;
+  padding-top: 11px;
+  padding-right: 10px;
+  padding-bottom: 12px;
   width: 270px;
   box-sizing: border-box;
 }
@@ -556,9 +655,32 @@ input[type="search"]:focus {
   background-color: #fff;
   color: #000;
 }
+
+::-webkit-input-placeholder {
+  color:#fff;
+  opacity:1;
+}
+
+::-moz-placeholder          {
+  color:#fff;
+  opacity:1;
+}
+
+:-moz-placeholder           {
+  color:#fff;
+  opacity:1;
+}
+
+:-ms-input-placeholder      {
+  color:#fff;
+  opacity:1;
+}
+
 .main-search {
   position: relative;
+  height: 42px;
 }
+
 .main-search label::before {
   font-family: "symbols-technomart";
   content: '\1f50d';
@@ -575,10 +697,12 @@ input[type="search"]:focus {
 input:hover ~ label:before {
   opacity: 1;
 }
+
 input:focus ~ label:before {
   color: #ee3643;
   opacity: 1;
 }
+
 .main-bookmark {
   padding: 13px 27px 12px 44px;
   text-align: center;
@@ -601,18 +725,23 @@ input:focus ~ label:before {
   opacity: .3;
   color: #fff;
 }
+
 .main-bookmark:hover::before {
   opacity: 1;
 }
+
 .main-bookmark:active::before {
   opacity: .3;
 }
+
 .main-bookmark:hover {
   background: #212a3a;
 }
+
 .main-bookmark:active {
   background: #161d29;
 }
+
 .shop-cart {
   position: relative;
   padding: 12px 2px 13px 27px;
@@ -622,7 +751,6 @@ input:focus ~ label:before {
   color: #fff;
   text-decoration: none;
   display: block;
-
 }
 .shop-cart::before {
   font-family: "symbols-technomart";
@@ -634,18 +762,23 @@ input:focus ~ label:before {
   top: 12px;
   opacity: .3;
 }
+
 .shop-cart:hover::before {
   opacity: 1;
 }
+
 .shop-cart:active::before {
   opacity: .3;
 }
+
 .shop-cart:hover {
   background: #212a3a;
 }
+
 .shop-cart:active {
   background: #161d29;
 }
+
 .place-order {
   padding: 12px 21px 13px 20px;
   font-size: 17px;
@@ -655,17 +788,21 @@ input:focus ~ label:before {
   background: #63a63e;
   display: block;
 }
+
 .place-order:hover {
   background: #5fbb2d;
 }
+
 .place-order:active {
   background: #518534;
 }
+
 .middle-header {
   padding-top: 45px;
   background-color: #f1f5f7;
   padding-bottom: 60px;
 }
+
 .main-title {
   color: #ee3643;
   font-size: 16px;
@@ -676,6 +813,7 @@ input:focus ~ label:before {
   padding-top: 3px;
   margin: 0;
 }
+
 .phone {
   position: relative;
   padding: 8px 42px 10px 73px;
@@ -684,6 +822,7 @@ input:focus ~ label:before {
   color: #e9292a;
   width: 270px;
 }
+
 .phone::before {
   font-family: "symbols-technomart";
   content: '\1f4de';
@@ -701,12 +840,15 @@ input:focus ~ label:before {
   color: #32425c;
   text-align: center;
 }
+
 .btn:hover {
   background-color: #ca2c37;
 }
+
 .btn:active{
   background-color: #ba2732;
 }
+
 .btn-auth {
   position: relative;
   padding: 13px 9px 15px 48px;
@@ -719,6 +861,7 @@ input:focus ~ label:before {
   height: 45px;
   display: inline-block;
 }
+
 .button-enter::before {
   font-family: "symbols-technomart";
   content:'\1f468';
@@ -729,15 +872,19 @@ input:focus ~ label:before {
   top: 13px;
   left: 15px;
 }
+
 .button-enter:hover::before {
   color: #32425c;
 }
+
 .button-enter:active::before {
   color: #c5c5c5;
 }
+
 .button-enter:active {
   color: #c9c9c9;
 }
+
 .button-exit::before {
   font-family: "symbols-technomart";
   content:'\241b';
@@ -748,12 +895,15 @@ input:focus ~ label:before {
   top: 13px;
   left: 28px;
 }
+
 .button-exit:hover::before {
   color: #32425c;
 }
+
 .button-exit:active::before {
   color: #c5c5c5;
 }
+
 .btn-private {
   font-size: 16px;
   color: #32425c;
@@ -762,6 +912,7 @@ input:focus ~ label:before {
   padding: 5px 17px 0 15px;
   position: relative;
 }
+
 .auth .btn-private:last-child::before {
   content: '';
   width: 4px;
@@ -772,12 +923,15 @@ input:focus ~ label:before {
   top: 15px;
   left: -4px;
 }
+
 .btn-private:hover {
   color: #ee3643;
 }
+
 .btn-private:active {
   color: #c3c9cf;
 }
+
 .btn-enter {
   position: relative;
   padding: 13px 27px 15px 48px;
@@ -789,6 +943,7 @@ input:focus ~ label:before {
   float: left;
   width: 120px;
 }
+
 .btn-enter::before {
   font-family: "symbols-technomart";
   content: '\2386';
@@ -803,15 +958,19 @@ input:focus ~ label:before {
 .btn-enter:hover::before {
   color: #32425c;
 }
+
 .btn-enter:active::before {
   color: #c5c5c5;
 }
+
 .btn-enter:hover {
   color: #ee3643;
 }
+
 .btn-enter:active {
   color: #b2b2b2;
 }
+
 .btn-reg {
   float: left;
   width: 150px;
@@ -823,12 +982,15 @@ input:focus ~ label:before {
   text-decoration: none;
   margin-left: 10px;
 }
+
 .btn-reg:hover {
   color: #ee3643;
 }
+
 .btn-reg:active {
   color: #b2b2b2;
 }
+
 .main-nav {
   background: #32425c;
   border-bottom: 5px solid #293449;
@@ -836,11 +998,13 @@ input:focus ~ label:before {
   width: 100%;
   margin-top: 40px;
 }
+
 .main-nav ul {
   margin: 0;
   padding: 0 21px;
   font-size: 0;
 }
+
 .main-nav li {
   list-style-type: none;
 }
@@ -857,9 +1021,11 @@ input:focus ~ label:before {
 .main-nav li:hover {
   background: #293449;
 }
+
 .main-nav li:active {
   background: #1d2739;
 }
+
 .main-nav li a:active {
   color: #a6a8ad;
 }
@@ -868,24 +1034,21 @@ input:focus ~ label:before {
   margin-top: 60px;
 }
 
-
 .arrows {
   display: inline-block;
   width: 20px;
   height: 45px;
   margin: 0 5px;
-
   vertical-align: top;
-
-  background: #ffffff;
+  background: #fff;
   border: 2px solid white;
   border-radius: 50%;
   cursor: pointer;
 }
+
 .arrows label[for="btn-1"]::before {
   font-family: "symbols-technomart";
   content: "\3c";
-
   color: #fff;
   position: absolute;
   z-index: 50;
@@ -894,10 +1057,10 @@ input:focus ~ label:before {
   cursor: pointer;
   font-size: 45px;
 }
+
 .arrows label[for="btn-2"]::before {
   font-family: "symbols-technomart";
   content: "\3e";
-
   color: #fff;
   position: absolute;
   z-index: 50;
@@ -906,9 +1069,9 @@ input:focus ~ label:before {
   cursor: pointer;
   font-size: 45px;
 }
+
 .slider {
   position: relative;
-
   width: 620px;
   min-height: 266px;
   margin: 0 auto;
@@ -920,13 +1083,10 @@ input:focus ~ label:before {
   position: absolute;
   top: 0;
   left: 0;
-
   width: 100%;
   height: 266px;
-
   background-repeat: no-repeat;
   background-position: 100% 10px;
-
   -webkit-transition: left 0.3s ease;
      -moz-transition: left 0.3s ease;
           transition: left 0.3s ease;
@@ -952,14 +1112,13 @@ input:focus ~ label:before {
   width: 10px;
   height: 10px;
   margin: 0 5px;
-
   vertical-align: top;
-
-  background: #ffffff;
-  border: 2px solid white;
+  background-color: #fff;
+  border: 2px solid #fff;
   border-radius: 50%;
   cursor: pointer;
 }
+
 .slides .slide:first-child .slide-text{
   position: absolute;
   width: 620px;
@@ -967,6 +1126,7 @@ input:focus ~ label:before {
   background: url(../img/bgslide.png) no-repeat center top;
   height: 105px;
 }
+
 .slides .slide:last-child .slide-text{
   position: absolute;
   width: 620px;
@@ -974,6 +1134,7 @@ input:focus ~ label:before {
   background: url(../img/bgslide2.png) no-repeat center top;
   height: 105px;
 }
+
 .slide-title {
   font-weight: bold;
   font-size: 36px;
@@ -984,7 +1145,6 @@ input:focus ~ label:before {
 .slide p {
   font-size: 18px;
   color: #fff;
-  font-family: 'PT Sans', 'Arial' sans-serif;
   margin-top: 5px;
 }
 
@@ -1030,14 +1190,10 @@ input:focus ~ label:before {
   left: -660px;
 }
 
-
-
 #btn-1:checked ~ .slider-controls label[for="btn-1"],
 #btn-2:checked ~ .slider-controls label[for="btn-2"] {
   background: #ee3643
 }
-
-
 
 .block {
   padding: 17px 0 20px 22px;
@@ -1051,6 +1207,7 @@ input:focus ~ label:before {
   color: #fff;
   font-weight: bold;
 }
+
 .block>a {
   font-size: 14px;
   line-height: 18px;
@@ -1068,12 +1225,15 @@ input:focus ~ label:before {
   border-radius: 3px;
   background-color: rgba(0,0,0,.1);
 }
+
 .block>a:hover {
   background-color: rgba(0,0,0,.2);
 }
+
 .block>a:active {
   background-color: rgba(0,0,0,.3);
 }
+
 .materials {
   background: #f6b22d url(../img/sprite.png) no-repeat -11% 58%;
 }
@@ -1097,7 +1257,9 @@ input:focus ~ label:before {
 .popular {
   padding: 23px 25px 25px 27px;
   background: #f7f3ec;
+  font-family: 'Cuprum', sans-serif;
 }
+
 .popular>div {
   color: #32425c;
   font-size: 30px;
@@ -1105,6 +1267,7 @@ input:focus ~ label:before {
   text-transform: uppercase;
   padding-top: 5px;
 }
+
 .popular>a {
   width: 253px;
   text-align: center;
@@ -1126,63 +1289,85 @@ input:focus ~ label:before {
   margin-top: 20px;
   padding: 10px;
   vertical-align: middle;
-  
 }
 .card-product img{
   line-height: 140px;
   vertical-align: top;
 }
+
 .products  .index-product {
   margin-right: 20px;
 }
+
 .products .index-product:nth-child(4n) {
   margin-right: 0;
 }
+
 .brands .card-product {
   margin-right: 20px;
   height: 145px;
   line-height: 120px;
 }
+
 .brands .card-product:hover {
   box-shadow: 0 10px 20px 0 #a9adb5;
 }
+
 .brands .card-product:active {
   box-shadow: 0 10px 10px 0 #a9adb5;
   opacity: .3;
 }
+
 .brands .card-product img{
   vertical-align: middle;
 }
+
 .brands .card-product:nth-child(4n) {
   margin-right: 0;
 }
+
 .contact {
   padding: 0 0 85px;
 }
+
 .main .contact h2 {
-  font-family: 'PT Sans', 'Arial' sans-serif;
   font-size: 30px;
   color: #000;
   text-transform: uppercase;
   margin-top: 10px;
   margin-bottom: 30px;
+  font-family: 'Cuprum', sans-serif;
 }
+
 .contact p {
   font-size: 13px;
   line-height: 24px;
   margin: 17px 0 6px;
 }
+
 .default-list {
   margin: 0;
   padding: 0;
 }
+
 .default-list li {
   padding-left: 35px;
   list-style-type: none;
-  background: url(../img/line.png) no-repeat left 70%;
   font-size: 18px;
   line-height: 20px;
   padding-top: 20px;
+  position: relative;
+  font-family: 'Cuprum', sans-serif;
+}
+
+.default-list li::before {
+  content: "";
+  position: absolute;
+  top: 29px;
+  left: 0;
+  width: 25px;
+  height: 2px;
+  background-color: #fb565a;
 }
 
 .btn {
@@ -1193,64 +1378,76 @@ input:focus ~ label:before {
   text-transform: uppercase;
   text-decoration: none;
   color: #fff;
+  font-family: 'Cuprum', sans-serif;
 }
+
 .btn-small {
   float: left;
   padding: 13px 40px;
   margin-top: 35px;
 }
+
 .btn-map {
   padding: 12px 62px;
   float: right;
   margin-top: 32px;
 }
+
 .map {
   margin-top: 29px;
 }
+
 .footer-top {
   background: #32425c;
 }
+
 .footer-bottom {
   background: #293449;
-  padding: 36px 0 30px 0;
+  padding: 36px 0 35px 0;
 }
+
 .footer-left>div {
   font-size: 18px;
   line-height: 24px;
   color: #fff;
-  padding-top: 25px;
-  padding-bottom: 50px;
+  padding-top: 31px;
+  padding-bottom: 51px;
 }
-.footer-left>a>img {
-  box-shadow: 0 5px 0 0 #b52933;
-}
+
 .footer-right li {
   list-style-type: none;
-  padding-right: 59px;
+  padding-right: 57px;
 }
+
 .footer-right li:hover a{
   text-decoration: underline;
 }
+
 .footer-right li:last-child {
   padding-right: 0;
 }
+
 .footer-right li a {
   text-decoration: none;
   font-size: 18px;
   color: #fff;
 }
+
 .footer-right ul:first-child {
   margin: 0;
   padding: 37px 0 0 2px;
 }
+
 .footer-right ul:last-child {
   margin: 0;
   padding-left: 26px;
-  padding-top: 32px;
-  }
+  padding-top: 28px;
+}
+
 .footer-right ul:last-child li a{
   color: #ffd180;
 }
+
 .copyright {
   font-size: 16px;
   line-height: 18px;
@@ -1266,8 +1463,8 @@ input:focus ~ label:before {
   position: absolute;
   top: 7px;
   left: 10px;
-
 }
+
 .social-btn-fb::before {
   font-family: "symbols-technomart";
   content:'\66';
@@ -1277,8 +1474,8 @@ input:focus ~ label:before {
   position: absolute;
   top: 7px;
   left: 15px;
-
 }
+
 .social-btn-inst::before {
   font-family: "symbols-technomart";
   content:'\1f4f7';
@@ -1288,8 +1485,8 @@ input:focus ~ label:before {
   position: absolute;
   top: 7px;
   left: 13px;
-
 }
+
 .social-btn:hover,
 .social-btn:active {
   background: #ee3643;
@@ -1301,39 +1498,51 @@ input:focus ~ label:before {
   color: #fff;
   line-height: 16px;
 }
+
 .allocation {
   font-size: 16px;
   color: #ffd180;
   text-decoration: none;
   line-height: 16px;
 }
+
 .allocation:hover {
   text-decoration: underline;
 }
+
 .allocation:active {
   text-decoration: none;
   color: #ee3643;
 }
+
 .callback:last-child {
   padding-left: 30px;
 }
-
 
 .services {
   background: #f2f6f8;
   margin-bottom: 53px;
   margin-top: 65px;
+  font-family: 'Cuprum', sans-serif;
 }
+
+.services p {
+  font-family: 'PT Sans', 'Arial', sans-serif;
+}
+
 .services-bott {
   margin-top: 85px;
   margin-top: 79px;
 }
+
 .sub-title {
+  font-family: 'Cuprum', sans-serif;
   padding-top: 68px;
   font-size: 30px;
   line-height: 24px;
   text-transform: uppercase;
 }
+
 .service-slider {
   position: relative;
   text-align: left;
@@ -1342,6 +1551,7 @@ input:focus ~ label:before {
   margin-top: 73px;
   transition: background-image 0.5s ease, background-color 0.5s ease;
 }
+
 .service-slides h3{
   font-size: 36px;
   color: #32425c;
@@ -1352,13 +1562,26 @@ input:focus ~ label:before {
 .sliders-controls {
   float: left;
   width: 240px;
+  position: relative;
 }
+
+.service-slider .sliders-controls::before {
+  position: absolute;
+  top: -32px;
+  right: 0px;
+  content:"";
+  width: 8px;
+  height: 242px;
+  background: url(../img/shadow.png) no-repeat right 10%;
+}
+
 .service-slides {
   float: right;
   width: 700px;
   padding-left: 80px;
   height: 100%;
 }
+
 .sliders-controls label {
   display: block;
   width: 240px;
@@ -1369,6 +1592,21 @@ input:focus ~ label:before {
   color: #fff;
   font-size: 21px;
   cursor: pointer;
+  border-bottom: 1px solid #293449;
+  border-top: 1px solid #405069;
+  font-weight: bold;
+}
+
+.sliders-controls label:last-child {
+  border-bottom: none;
+}
+
+.sliders-controls label:first-child {
+  border-top: none;
+}
+
+.sliders-controls label:hover {
+  background: #293449;
 }
 
 .service-slider .slider-controls {
@@ -1378,23 +1616,54 @@ input:focus ~ label:before {
   z-index: 20;
   font-size: 0;
 }
+
 .service-slider> input[type="radio"] {
   display: none;
 }
+
 .service-slider .service-slide {
   display: none;
 }
-#p1:checked ~ .service-slides .title1,
-#p2:checked ~ .service-slides .title2,
-#p3:checked ~ .service-slides .title3 {
+
+#p1:checked ~ .service-slides .service-slide:nth-child(1),
+#p2:checked ~ .service-slides .service-slide:nth-child(2),
+#p3:checked ~ .service-slides .service-slide:nth-child(3) {
   display: block;
 }
+
 #p1:checked ~ .sliders-controls label[for="p1"],
 #p2:checked ~ .sliders-controls label[for="p2"],
 #p3:checked ~ .sliders-controls label[for="p3"] {
   background-color: #ffffff;
   color: #32425c;
 }
+
+input[id=p1]:checked~.service-slides .service-slide:nth-child(1),
+input[id=p2]:checked~.service-slides .service-slide:nth-child(2),
+input[id=p3]:checked~.service-slides .service-slide:nth-child(3) {
+display: block;
+-webkit-animation: slideleft .6s forwards;
+animation: slideleft .6s forwards;
+}
+
+
+@keyframes slideleft {
+0% {
+-webkit-transform: translateX(100%);
+transform: translateX(100%)
+}
+100% {
+-webkit-transform: translateX(0);
+transform: translateX(0)
+}
+}
+
+.slider-btn {
+  padding: 10px 40px;
+  margin-top: 20px;
+  display: inline-block;
+}
+
 #p1:checked ~ .service-slides {
   background: url("../img/delivery.png") no-repeat right center;
 }
@@ -1406,29 +1675,34 @@ input:focus ~ label:before {
 #p3:checked ~ .service-slides {
   background: url("../img/credit.png") no-repeat right center;
 }
+
 .breadcrumbs {
   padding-left: 0;
 }
+
 .breadcrumbs li {
   padding-left: 40px;
   list-style-type: none;
   position: relative;
-  font-family: 'PT Sans', 'Arial', sans-serif;
   font-size: 13px;
   text-transform: uppercase;
 }
+
 .breadcrumbs li a {
   color: #000;
   text-decoration: none;
 }
+
 .breadcrumbs li:first-child {
   padding-left: 0;
 }
+
 .breadcrumbs li:first-child a {
   height: 16px;
   width: 16px;
   display: inline-block;
 }
+
 .breadcrumbs li::before {
   font-family: "symbols-technomart";
   content:'\3e';
@@ -1439,9 +1713,11 @@ input:focus ~ label:before {
   top: -1px;
   left: 16px;
 }
+
 .breadcrumbs li:first-child::before {
   content: '';
 }
+
 .breadcrumbs li:first-child a::before{
   font-family: "symbols-technomart";
   content:'\1f3e0';
@@ -1452,6 +1728,7 @@ input:focus ~ label:before {
   top: -2px;
   left: 0px;
 }
+
 .page-ttile {
   font-size: 30px;
   color: #32425c;
@@ -1460,27 +1737,33 @@ input:focus ~ label:before {
   background-color: #f2f6f8;
   font-weight: normal;
 }
+
 .left-filter {
   padding: 8px 20px;
   background: #f7f3ec;
 }
+
 .right-filter {
   padding: 8px 0 8px 20px;
   background: #f7f3ec;
 }
+
 .products {
   margin-top: 20px;
 }
+
 .filter-group {
   padding-bottom: 25px;
   margin-bottom: 18px;
   border-bottom: 1px solid #e5e5e5;
 }
+
 .filter-form .sub-title {
   font-weight: bold;
   font-size: 17px;
   padding: 0;
 }
+
 .range-controls {
   position: relative;
   height: 80px;
@@ -1490,19 +1773,22 @@ input:focus ~ label:before {
   overflow: hidden;
   background-color: #f7f3ec;
 }
+
 .range-controls .scale {
   margin-top: 39px;
   height: 2px;
   background: #d7dcde;
 }
+
 .range-controls .bar {
   height: 2px;
   background: #00ca74;
 }
+
 .range-controls .toggle {
   position: absolute;
   top: 30px;
-  left: 50px;
+  left: 10px;
   width: 4px;
   height: 4px;
   border: 8px solid white;
@@ -1510,11 +1796,13 @@ input:focus ~ label:before {
   cursor: pointer;
   border-radius: 50%;
   box-shadow: 0 2px 1px 0 #d4d1cb;
-  
+  box-sizing: content-box;
 }
+
 .range-controls .max-toggle {
-  left: 130px;
+  left: 150px;
 }
+
 .price-controls input {
   width: 95px;
   padding: 10px;
@@ -1526,21 +1814,29 @@ input:focus ~ label:before {
   font-style: normal;
   font-size: 17px;
 }
+
 .price-controls input:last-child {
   margin-left: 26px;
+}
+
+.price-controls {
   position: relative;
 }
-.price-controls input::before {
+
+.price-controls::before {
   position: absolute;
+  content: "";
   height: 1px;
   width: 10px;
   background: #000;
-  top: 15px;
-  left: -20px;
+  top: 21px;
+  left: 104px;
 }
+
 input[type="checkbox"] {
   display: none;
 }
+
 input[type="checkbox"] + label {
   display: block;
   margin: 10px 0;
@@ -1551,9 +1847,11 @@ input[type="checkbox"] + label {
   font-size: 15px;
   margin-bottom: 20px;
 }
+
 input[type="checkbox"] + label:last-child {
   margin-bottom: 0;
 }
+
 input[type="checkbox"] + label::before {
   content: '\2610';
   font-family: "symbols-technomart";
@@ -1565,13 +1863,16 @@ input[type="checkbox"] + label::before {
   color: #c1c1c1;
   font-size: 28px;
 }
+
 input[type="checkbox"]:checked + label::before {
   content: '\2611';
   font-family: "symbols-technomart";
 }
+
 input[type="radio"] {
   display: none;
 }
+
 input[type="radio"] + label {
   display: block;
   margin: 10px 0;
@@ -1582,10 +1883,11 @@ input[type="radio"] + label {
   font-size: 15px;
   margin-bottom: 20px;
 }
-}
+
 input[type="radio"] + label:last-child {
   margin-bottom: 0;
 }
+
 input[type="radio"] + label::before {
   content: '\25cb';
   font-family: "symbols-technomart";
@@ -1597,13 +1899,32 @@ input[type="radio"] + label::before {
   color: #c1c1c1;
   font-size: 28px;
 }
+
 input[type="radio"]:checked + label::before {
   content: '\25cf';
   font-family: "symbols-technomart";
 }
+
+input[type="checkbox"]:disabled + label::before{
+  opacity: .4;
+}
+
+input[type="checkbox"]:disabled + label{
+  opacity: .4;
+}
+
+input[type="radio"]:disabled + label::before{
+  opacity: .4;
+}
+
+input[type="radio"]:disabled + label{
+  opacity: .4;
+}
+
 .filter-bottom {
   border-bottom: none;
 }
+
 .filter-form .btn {
   border: 1px solid #e5e5e5;
   background-color: #fff;
@@ -1613,56 +1934,78 @@ input[type="radio"]:checked + label::before {
   padding: 12px 38px;
   margin-top: 15px;
 }
+
 .pagination {
   margin-top: 10px;
 }
-.pagination li:first-child {
-  padding: 6px 17px;
-  background-color: #ee3643;
-  color: #fff;
-  border: none;
-  width: 38px;
+
+.pagination li:last-child {
+  padding: 0 15px;
 }
+
 .pagination li {
   list-style-type: none;
   border-radius: 3px;
   border: 1px solid #e5e5e5;
   color: #000;
   height: 38px;
-  
   background-color: #fff;
   margin-right: 10px;
-  font-family: 'PT Sans', 'Arial' sans-serif;
   font-size: 13px;
 }
+
+.pagination li:hover {
+  border: 1px solid #bdc6ca;
+}
+
+.pagination li:active {
+  border: 1px solid #ee3643;
+}
+
+.pagination li.active {
+  padding: 6px 17px;
+  background-color: #ee3643;
+  color: #fff;
+  border: none;
+  width: 38px;
+}
+
 .pagination li a {
-  padding: 6px 16px;
+  padding: 6px 15px;
   display: inline-block;
 }
+
 .pagination ul {
   padding: 0;
 }
+
 .pagination li a {
   text-transform: uppercase;
   text-decoration: none;
   color: #000;
-
 }
+
 .about-product {
   background-color: #f2f6f8;
   margin-top: 55px;
   padding: 49px 0 56px;
-
 }
+
 .about-product .aboun-name {
   text-transform: uppercase;
   font-size: 30px;
   font-weight: normal;
   margin-bottom: 30px;
+  font-family: 'Cuprum', sans-serif;
 }
+
 .main .about-product p {
-  font-family: 'PT Sans', 'Arial' sans-serif;
 }
+
 .filled {
   background-color: #ee3643;
+}
+
+.main-footer {
+  font-family: 'Cuprum', sans-serif;
 }
