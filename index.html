@@ -268,7 +268,7 @@
              заехав в наш офис:
           </p>
           <div class="map">
-            <img src="img/map.jpg" alt="map" width="300" height="158">
+            <a class="open-map" href="#"><img src="img/map.jpg" alt="map" width="300" height="158"></a>
           </div>
           <a class="btn btn-map" href="#">Заблудились? Напишите нам</a>
         </div>
@@ -328,11 +328,11 @@
           <div class="personal-data clearfix">
             <div class="left-input">
               <label for="name">Ваше имя:</label>
-              <input type="text" id="name" placeholder="Представьтесь, пожалуйста">
+              <input name="login" type="text" id="name" placeholder="Представьтесь, пожалуйста">
             </div>
             <div class="right-input">
               <label for="email">Ваш e-mail:</label>
-            <input type="text" id="email" placeholder="Для отправки ответа">
+            <input name="email" type="text" id="email" placeholder="Для отправки ответа">
             </div>
           </div>
             <label for="textarea">Текст письма:</label>
@@ -349,5 +349,71 @@
         
       </div>
     </div>
+    <script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=gZr9AvEg86UPxqRRqij_Vkx3RsCrVc2t&width=940&height=450&lang=ru_RU&sourceType=constructor&id=yandex-map"></script>
+    <script>
+      var link = document.querySelector(".btn-map");
+      var popup = document.querySelector(".modal-content");
+      var close = popup.querySelector(".modal-content-close");
+      var login = popup.querySelector("[name=login]")
+      var email = popup.querySelector("[name=email]")
+      var form = popup.querySelector("form");
+      var storage = localStorage.getItem("login");
+      link.addEventListener("click", function(event) {
+        event.preventDefault();
+        popup.classList.add("show-popup");
+        if (storage) {
+          login.value = storage;
+          email.focus();
+        } else {
+          login.focus();
+        }
+      });
+      close.addEventListener("click", function(event) {
+        event.preventDefault();
+        popup.classList.remove("show-popup");
+        popup.classList.remove("modal-error");
+      });
+      form.addEventListener("submit", function(event) {
+        event.preventDefault();
+        if(!email.value || !login.value) {
+          event.preventDefault();
+          popup.classList.remove("modal-error");
+          popup.offsetWidth = popup.offsetWidth;
+          popup.classList.add("modal-error");
+          console.log("Нужно представиться и ввести e-mail");
+        } else {
+          localStorage.setItem("login", login.value);
+        }
+      });
+       window.addEventListener("keydown", function(event) {
+        if (event.keyCode === 27) {
+          if (popup.classList.contains("show-popup")) {
+            popup.classList.remove("show-popup");
+            popup.classList.remove("modal-error");
+          }
+        }
+      });
+      var mapOpen = document.querySelector(".open-map");
+      var mapPopup = document.querySelector(".modal-content-map");
+      var mapClose = mapPopup.querySelector(".modal-content-close");
+
+      mapOpen.addEventListener("click", function(event) {
+        event.preventDefault();
+        mapPopup.classList.add("show-popup");
+      });
+
+      mapClose.addEventListener("click", function(event) {
+        event.preventDefault();
+        mapPopup.classList.remove("show-popup");
+      });
+
+      window.addEventListener("keydown", function(event) {
+        if (event.keyCode === 27) {
+          if (mapPopup.classList.contains("show-popup")) {
+            mapPopup.classList.remove("show-popup");
+          }
+        }
+      });
+    </script>
   </body>
 </html>
