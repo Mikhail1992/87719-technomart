@@ -85,41 +85,34 @@
           <div>Техника</div>
           <a href="#">Для стройки</a>
         </div>
-        
-
-
-<div class="slider">
-        <input type="radio" id="btn-1" name="toggle" checked>
-        <input type="radio" id="btn-2" name="toggle">
-        <div class="slider-controls">
-          <label for="btn-1"></label>
-          <label for="btn-2"></label>
-        </div>
-        <div class="arrows">
-          <label for="btn-1"></label>
-          <label for="btn-2"></label>
-        </div>
-        <div class="slides">
-          <div class="slide">
-            <div class="slide-text">
-              <div class="slide-title">Перфораторы</div>
-              <p>Настоящие мужские игрушки</p>
-            </div>
-            <a class="btn-slide btn" href="#">Открыть каталог</a>
+        <div class="slider">
+          <input type="radio" id="btn-1" name="toggle" checked>
+          <input type="radio" id="btn-2" name="toggle">
+          <div class="slider-controls">
+            <label for="btn-1"></label>
+            <label for="btn-2"></label>
           </div>
-          <div class="slide">
-            <div class="slide-text">
-              <div class="slide-title">Дрели</div>
-              <p>Соседям на радость!</p>
+          <div class="arrows">
+            <label for="btn-1"></label>
+            <label for="btn-2"></label>
+          </div>
+          <div class="slides">
+            <div class="slide">
+              <div class="slide-text">
+                <div class="slide-title">Перфораторы</div>
+                <p>Настоящие мужские игрушки</p>
+              </div>
+              <a class="btn-slide btn" href="#">Открыть каталог</a>
             </div>
-            <a class="btn-slide btn" href="#">Открыть каталог</a>
+            <div class="slide">
+              <div class="slide-text">
+                <div class="slide-title">Дрели</div>
+                <p>Соседям на радость!</p>
+              </div>
+              <a class="btn-slide btn" href="#">Открыть каталог</a>
+            </div>
           </div>
         </div>
-      </div>
-
-
-
-
         <div class="block discounts">
           <div>Скидки 50%</div>
           <a href="#">На 350 товаров</a>
@@ -252,7 +245,6 @@
         </div>
       </div>
       </div>
-      
       <section class="contact">
         <div class="container clearfix">
         <div class="column-left">
@@ -282,7 +274,6 @@
         </div>
         </div>
       </section>
-
     </main>
     <footer class="main-footer">
       <div class="footer-top">
@@ -330,5 +321,29 @@
         </div>
       </div>
     </footer>
+    <div class="modal-content">
+      <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+      <form class="login-form clearfix" action="https://echo.htmlacademy.ru" method="post">
+        <fieldset>
+          <p class="left-col">
+            <label for="name">Ваше имя:</label>
+            <input type="text" name="name" id="name" placeholder="Представтесь, пожалуйста">
+          </p>
+          <p class="right-col">
+            <label for="email">Ваш e-mail:</label>
+            <input type="text" name="email" id="email" placeholder="Для отправки ответа">
+          </p>
+        </fieldset>
+        <fieldset>
+          <p class="bottom-col">
+            <label for="id1">Текст письма:</label>
+            <textarea name="text" id="id1" cols="30" rows="4" placeholder="В своюодной форме"></textarea>
+          </p>
+        </fieldset> 
+        <p class="btn-wrap">
+          <button class="btn" type="submit">Отправить</button>
+        </p>
+      </form>
+    </div>
   </body>
 </html>
