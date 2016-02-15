@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>Главная</title>
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <link href='https://fonts.googleapis.com/css?family=Cuprum:400,700,400italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
   </head>
@@ -207,7 +207,7 @@
             <label for="p3">Кредит</label>
           </div>
           <div class="service-slides">
-            <div class="service-slide title1">
+            <div class="service-slide">
               <div class="slider-caption">
                 <h3>Доставка</h3>
                 <p class="description">
@@ -218,7 +218,7 @@
                 </p>
               </div>
             </div>
-            <div class="service-slide title2">
+            <div class="service-slide">
               <div class="slider-caption">
                 <h3>Гарантия</h3>
                 <p class="description">
@@ -230,7 +230,7 @@
                 </p>
               </div>
             </div>
-            <div class="service-slide title3">
+            <div class="service-slide">
               <div class="slider-caption">
                 <h3>Кредит</h3>
                 <p class="description">
@@ -241,7 +241,6 @@
               <a href="#" class="slider-btn btn">Отправить заявку</a>
             </div>
           </div>
-          
         </div>
       </div>
       </div>
@@ -336,7 +335,7 @@
             </div>
           </div>
             <label for="textarea">Текст письма:</label>
-            <textarea name="" id="" cols="30" rows="10" placeholder="В свободной форме"></textarea>
+            <textarea cols="30" rows="10" id="textarea" placeholder="В свободной форме"></textarea>
         </div>
         <div class="modal-container-footer">
           <button class="btn" type="submit">Отправить</button>
@@ -344,76 +343,11 @@
       </form>
     </div>
     <div class="modal-content-map">
-      <a class="modal-content-close" type="button" title="Закрыть">Закрыть</a>
+      <a class="modal-content-close" title="Закрыть">Закрыть</a>
       <div id="yandex-map">
-        
       </div>
     </div>
     <script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=gZr9AvEg86UPxqRRqij_Vkx3RsCrVc2t&width=940&height=450&lang=ru_RU&sourceType=constructor&id=yandex-map"></script>
-    <script>
-      var link = document.querySelector(".btn-map");
-      var popup = document.querySelector(".modal-content");
-      var close = popup.querySelector(".modal-content-close");
-      var login = popup.querySelector("[name=login]")
-      var email = popup.querySelector("[name=email]")
-      var form = popup.querySelector("form");
-      var storage = localStorage.getItem("login");
-      link.addEventListener("click", function(event) {
-        event.preventDefault();
-        popup.classList.add("show-popup");
-        if (storage) {
-          login.value = storage;
-          email.focus();
-        } else {
-          login.focus();
-        }
-      });
-      close.addEventListener("click", function(event) {
-        event.preventDefault();
-        popup.classList.remove("show-popup");
-        popup.classList.remove("modal-error");
-      });
-      form.addEventListener("submit", function(event) {
-        event.preventDefault();
-        if(!email.value || !login.value) {
-          event.preventDefault();
-          popup.classList.remove("modal-error");
-          popup.offsetWidth = popup.offsetWidth;
-          popup.classList.add("modal-error");
-          console.log("Нужно представиться и ввести e-mail");
-        } else {
-          localStorage.setItem("login", login.value);
-        }
-      });
-       window.addEventListener("keydown", function(event) {
-        if (event.keyCode === 27) {
-          if (popup.classList.contains("show-popup")) {
-            popup.classList.remove("show-popup");
-            popup.classList.remove("modal-error");
-          }
-        }
-      });
-      var mapOpen = document.querySelector(".open-map");
-      var mapPopup = document.querySelector(".modal-content-map");
-      var mapClose = mapPopup.querySelector(".modal-content-close");
-
-      mapOpen.addEventListener("click", function(event) {
-        event.preventDefault();
-        mapPopup.classList.add("show-popup");
-      });
-
-      mapClose.addEventListener("click", function(event) {
-        event.preventDefault();
-        mapPopup.classList.remove("show-popup");
-      });
-
-      window.addEventListener("keydown", function(event) {
-        if (event.keyCode === 27) {
-          if (mapPopup.classList.contains("show-popup")) {
-            mapPopup.classList.remove("show-popup");
-          }
-        }
-      });
-    </script>
+   <script src="js/common.min.js"></script>
   </body>
 </html>

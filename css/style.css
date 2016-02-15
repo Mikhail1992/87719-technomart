@@ -62,9 +62,13 @@ body {
 .icon-search::before { content: "🔍"; } /* "\1f50d" */
 .icon-bookmark::before { content: "🔖"; } /* "\1f516" */
 
-
 * {
   box-sizing: border-box;
+}
+
+button,
+input {
+  outline: none;
 }
 
 .clearfix::after {
@@ -214,6 +218,7 @@ body {
   height: 60px;
   content: '';
   background: url('../img/new.png') no-repeat 0 0;
+  z-index: 10;
 }
 
 .catalog-item .actions {
@@ -221,7 +226,7 @@ body {
   top: 0;
   left: 0;
   width: 218px;
-  height: 88px;
+  height: 135px;
   padding: 40px 0;
   background-color: #fff; 
 }
@@ -482,6 +487,9 @@ body {
 .right-filter .arrow {
   border: none;
 }
+.right-filter .arrow:hover {
+  border: none;
+}
 .right-filter a:hover {
   color: rgba(0,0,0,1);
   border-bottom: 1px solid #ee3643;
@@ -532,6 +540,7 @@ body {
 
 .right-filter li:nth-child(4) a:hover::before {
   color: #000;
+  border: none;
 }
 
 .right-filter li:nth-child(4) a:active::before {
@@ -554,6 +563,7 @@ body {
 
 .right-filter li:nth-child(5) a:hover::before {
   color: #000;
+  border: none;
 }
 
 .right-filter li:nth-child(5) a:active::before {
@@ -2159,9 +2169,11 @@ textarea {
   font-family: 'Cuprum', sans-serif;
   padding: 7px 0;
 }
+
 .modal-container label[for="textarea"] {
   padding: 16px 0 7px;
 }
+
 .left-input input,
 .right-input input,
 .login-form textarea {
@@ -2170,21 +2182,27 @@ textarea {
   border: 2px solid #d7dcde;
   border-radius: 3px;
 }
+
 .login-form textarea {
   padding: 4px 15px;
 }
+
 .modal-content input::-moz-placeholder { 
   color: #999999; 
 }
+
 .modal-content input::-webkit-input-placeholder { 
   color: #999999; 
 }
+
 .modal-content textarea::-moz-placeholder { 
   color: #999999; 
 }
+
 .modal-content textarea::-webkit-input-placeholder { 
   color: #999999; 
 }
+
 .modal-container-footer {
   background: #f1f1f1;
   padding: 35px 0;
@@ -2202,6 +2220,7 @@ textarea {
   margin-left: -470px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
 }
+
 .modal-overlay {
   position: fixed;
   top: 0;
@@ -2211,6 +2230,7 @@ textarea {
   height: 100%;
   background: rgba(0, 0, 0, 0.5);
 }
+
 .show-popup {
   display: block;
    animation: bounce 0.6s;
@@ -2234,6 +2254,7 @@ textarea {
     transform: translateY(0);
   }
 }
+
 @keyframes shake {
   0%, 100% {
     transform: translateX(0);
