@@ -4,7 +4,7 @@ body {
   line-height: 24px;
   color: #000;
   font-weight: normal;
-  font-family: 'PT Sans', 'Arial', sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   padding: 0;
   margin: 0;
 
@@ -216,8 +216,8 @@ input {
   right: -1px;
   width: 60px;
   height: 60px;
-  content: '';
-  background: url('../img/new.png') no-repeat 0 0;
+  content: "";
+  background: url("../img/new.png") no-repeat 0 0;
   z-index: 10;
 }
 
@@ -233,7 +233,7 @@ input {
 
 .actions .buy,
 .actions .bookmark {
-  font-family: 'Cuprum', 'Arial', sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 14px;
   display: block;
   width: 135px;
@@ -340,7 +340,7 @@ input {
   padding: 8px 30px;
   color: #fff;
   border-radius: 3px;
-  background: #ee3643;
+  background-color: #ee3643;
 }
 
 .catalog-item .price:after {
@@ -349,7 +349,7 @@ input {
   right: -20px;
   width: 0;
   height: 0;
-  content: '';
+  content: "";
   border: 20px solid #fff;
   border-left-color: #ee3643;
 }
@@ -382,6 +382,9 @@ input {
   margin-right: 100px;
 }
 
+.column-left p:last-child {
+  padding-top: 25px;
+}
 .column-right {
   float: right;
   width: 300px;
@@ -435,7 +438,7 @@ input {
   height: 40px;
   border-radius: 50%;
   position: relative;
-  background: #212a3a;
+  background-color: #212a3a;
 }
 
 .social-btn:last-child {
@@ -484,6 +487,10 @@ input {
   border-bottom: 1px dotted #ee3643;
   display: block;
 }
+.right-filter a.active {
+  color: #ee3643;
+  border: none;
+}
 .right-filter .arrow {
   border: none;
 }
@@ -528,9 +535,9 @@ input {
   position: absolute;
   width: 10px;
   height: 10px;
-  content: '\25b2';
+  content: "\25b2";
   font-family: "symbols-technomart";
-  color: #c6c2bd;
+  color: #ee3643;
   top: -4px;
   left: -2px;
   font-size: 23px;
@@ -551,7 +558,7 @@ input {
   position: absolute;
   width: 10px;
   height: 10px;
-  content: '\25bc';
+  content: "\25bc";
   font-family: "symbols-technomart";
   color: #c6c2bd;
   top: -4px;
@@ -623,7 +630,7 @@ input {
   box-shadow: 0 5px 0 0 #b52933;
   width: 220px;
   height: 42px;
-  background: #ee3643;
+  background-color: #ee3643;
   padding: 12px 50px;
 }
 
@@ -640,7 +647,7 @@ input {
   box-shadow: 0 5px 0 0 #b52933;
   width: 220px;
   height: 62px;
-  background: #ee3643;
+  background-color: #ee3643;
   padding: 18px 36px;
   display: inline-block;
 }
@@ -652,7 +659,7 @@ input {
 
 .main-header {
   position: relative;
-  font-family: 'Cuprum', sans-serif;
+  font-family: "Cuprum", sans-serif;
 }
 
 .main-header input[type="search"] {
@@ -670,7 +677,7 @@ input {
 }
 
 input[type="search"]:hover {
-  background: #212a3a;
+  background-color: #212a3a;
 }
 
 input[type="search"]:focus {
@@ -706,7 +713,7 @@ input[type="search"]:focus {
 
 .main-search label::before {
   font-family: "symbols-technomart";
-  content: '\1f50d';
+  content: "\1f50d";
   width: 17px;
   height: 17px;
   position: absolute;
@@ -741,7 +748,7 @@ input:focus ~ label:before {
 
 .main-bookmark::before {
   font-family: "symbols-technomart";
-  content: '\1f516';
+  content: "\1f516";
   width: 14px;
   height: 16px;
   position: absolute;
@@ -762,11 +769,11 @@ input:focus ~ label:before {
 }
 
 .main-bookmark:hover {
-  background: #212a3a;
+  background-color: #212a3a;
 }
 
 .main-bookmark:active {
-  background: #161d29;
+  background-color: #161d29;
 }
 
 .shop-cart {
@@ -781,7 +788,7 @@ input:focus ~ label:before {
 }
 .shop-cart::before {
   font-family: "symbols-technomart";
-  content: '\62';
+  content: "\62";
   width: 19px;
   height: 16px;
   position: absolute;
@@ -801,11 +808,11 @@ input:focus ~ label:before {
 }
 
 .shop-cart:hover {
-  background: #212a3a;
+  background-color: #212a3a;
 }
 
 .shop-cart:active {
-  background: #161d29;
+  background-color: #161d29;
 }
 
 .place-order {
@@ -814,16 +821,16 @@ input:focus ~ label:before {
   line-height: 17px;
   color: #fff;
   text-decoration: none;
-  background: #63a63e;
+  background-color: #63a63e;
   display: block;
 }
 
 .place-order:hover {
-  background: #5fbb2d;
+  background-color: #5fbb2d;
 }
 
 .place-order:active {
-  background: #518534;
+  background-color: #518534;
 }
 
 .middle-header {
@@ -854,7 +861,7 @@ input:focus ~ label:before {
 
 .phone::before {
   font-family: "symbols-technomart";
-  content: '\1f4de';
+  content: "\1f4de";
   width: 19px;
   height: 16px;
   position: absolute;
@@ -897,7 +904,7 @@ input:focus ~ label:before {
 }
 .button-enter::before {
   font-family: "symbols-technomart";
-  content:'\1f468';
+  content:"\1f468";
   font-size: 18px;
   color: #c5c5c5;
   text-decoration: none;
@@ -921,7 +928,7 @@ input:focus ~ label:before {
 
 .button-exit::before {
   font-family: "symbols-technomart";
-  content:'\241b';
+  content:"\241b";
   font-size: 22px;
   color: #c5c5c5;
   text-decoration: none;
@@ -949,7 +956,7 @@ input:focus ~ label:before {
 }
 
 .auth .btn-private:last-child::before {
-  content: '';
+  content: "";
   width: 4px;
   height: 5px;
   background-color: #32425c;
@@ -981,7 +988,7 @@ input:focus ~ label:before {
 
 .btn-enter::before {
   font-family: "symbols-technomart";
-  content: '\2386';
+  content: "\2386";
   width: 19px;
   height: 19px;
   position: absolute;
@@ -1029,7 +1036,7 @@ input:focus ~ label:before {
 }
 
 .main-nav {
-  background: #32425c;
+  background-color: #32425c;
   border-bottom: 5px solid #293449;
   float: left;
   width: 100%;
@@ -1056,11 +1063,11 @@ input:focus ~ label:before {
 }
 
 .main-nav li:hover {
-  background: #293449;
+  background-color: #293449;
 }
 
 .main-nav li:active {
-  background: #1d2739;
+  background-color: #1d2739;
 }
 
 .main-nav li a:active {
@@ -1077,7 +1084,7 @@ input:focus ~ label:before {
   height: 45px;
   margin: 0 5px;
   vertical-align: top;
-  background: #fff;
+  background-color: #fff;
   border: 2px solid white;
   border-radius: 50%;
   cursor: pointer;
@@ -1164,7 +1171,7 @@ input:focus ~ label:before {
   position: absolute;
   width: 620px;
   padding: 26px 24px;
-  background: url(../img/bgslide.png) no-repeat center top;
+  background: #2a221c url(../img/bgslide.png) no-repeat center top;
   height: 105px;
 }
 
@@ -1172,7 +1179,7 @@ input:focus ~ label:before {
   position: absolute;
   width: 620px;
   padding: 26px 24px;
-  background: url(../img/bgslide2.png) no-repeat center top;
+  background: #2a221c url(../img/bgslide2.png) no-repeat center top;
   height: 105px;
 }
 
@@ -1197,13 +1204,11 @@ input:focus ~ label:before {
 }
 
 .slide:nth-child(1) {
-  background-image: url("../img/slider-img.jpg");
-  background-position: left top;
+  background: url("../img/slider-img.jpg") left top no-repeat;
 }
 
 .slide:nth-child(2) {
-  background-image: url("../img/slider-img2.jpg");
-  background-position: left top;
+  background: url("../img/slider-img2.jpg") left top no-repeat;
 }
 
 
@@ -1233,7 +1238,7 @@ input:focus ~ label:before {
 
 #btn-1:checked ~ .slider-controls label[for="btn-1"],
 #btn-2:checked ~ .slider-controls label[for="btn-2"] {
-  background: #ee3643
+  background: #ee3643;
 }
 
 .block {
@@ -1298,8 +1303,8 @@ input:focus ~ label:before {
 
 .popular {
   padding: 23px 25px 25px 27px;
-  background: #f7f3ec;
-  font-family: 'Cuprum', sans-serif;
+  background-color: #f7f3ec;
+  font-family: "Cuprum", sans-serif;
 }
 
 .popular>div {
@@ -1349,6 +1354,7 @@ input:focus ~ label:before {
   margin-right: 20px;
   height: 145px;
   line-height: 120px;
+  width: 220px;
 }
 
 .brands .card-product:hover {
@@ -1379,14 +1385,14 @@ input:focus ~ label:before {
   text-transform: uppercase;
   margin-top: 10px;
   margin-bottom: 30px;
-  font-family: 'Cuprum', sans-serif;
+  font-family: "Cuprum", sans-serif;
   font-weight: normal;
 }
 
 .contact p {
   font-size: 13px;
   line-height: 24px;
-  margin: 17px 0 6px;
+  margin: 15px 0 6px;
 }
 
 .default-list {
@@ -1399,9 +1405,9 @@ input:focus ~ label:before {
   list-style-type: none;
   font-size: 18px;
   line-height: 20px;
-  padding-top: 20px;
+  padding-top: 18px;
   position: relative;
-  font-family: 'Cuprum', sans-serif;
+  font-family: "Cuprum", sans-serif;
 }
 
 .default-list li::before {
@@ -1422,13 +1428,13 @@ input:focus ~ label:before {
   text-transform: uppercase;
   text-decoration: none;
   color: #fff;
-  font-family: 'Cuprum', sans-serif;
+  font-family: "Cuprum", sans-serif;
 }
 
 .btn-small {
   float: left;
   padding: 13px 40px;
-  margin-top: 35px;
+  margin-top: 38px;
 }
 
 .btn-map {
@@ -1442,11 +1448,11 @@ input:focus ~ label:before {
 }
 
 .footer-top {
-  background: #32425c;
+  background-color: #32425c;
 }
 
 .footer-bottom {
-  background: #293449;
+  background-color: #293449;
   padding: 36px 0 35px 0;
 }
 
@@ -1500,7 +1506,7 @@ input:focus ~ label:before {
 
 .social-btn-vk::before {
   font-family: "symbols-technomart";
-  content:'\76';
+  content:"\76";
   font-size: 18px;
   color: #fff;
   text-decoration: none;
@@ -1512,7 +1518,7 @@ input:focus ~ label:before {
 
 .social-btn-fb::before {
   font-family: "symbols-technomart";
-  content:'\66';
+  content:"\66";
   font-size: 18px;
   color: #fff;
   text-decoration: none;
@@ -1524,7 +1530,7 @@ input:focus ~ label:before {
 
 .social-btn-inst::before {
   font-family: "symbols-technomart";
-  content:'\1f4f7';
+  content:"\1f4f7";
   font-size: 18px;
   color: #fff;
   text-decoration: none;
@@ -1536,7 +1542,7 @@ input:focus ~ label:before {
 
 .social-btn:hover,
 .social-btn:active {
-  background: #ee3643;
+  background-color: #ee3643;
 }
 
 .develop-name {
@@ -1567,14 +1573,14 @@ input:focus ~ label:before {
 }
 
 .services {
-  background: #f2f6f8;
+  background-color: #f2f6f8;
   margin-bottom: 53px;
   margin-top: 65px;
-  font-family: 'Cuprum', sans-serif;
+  font-family: "Cuprum", sans-serif;
 }
 
 .services p {
-  font-family: 'PT Sans', 'Arial', sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
 }
 
 .services-bott {
@@ -1583,7 +1589,7 @@ input:focus ~ label:before {
 }
 
 .sub-title {
-  font-family: 'Cuprum', sans-serif;
+  font-family: "Cuprum", sans-serif;
   padding-top: 73px;
   font-size: 30px;
   line-height: 24px;
@@ -1653,7 +1659,7 @@ input:focus ~ label:before {
 }
 
 .sliders-controls label:hover {
-  background: #293449;
+  background-color: #293449;
 }
 
 .service-slider .slider-controls {
@@ -1693,7 +1699,6 @@ display: block;
 animation: slideleft .6s forwards;
 }
 
-
 @keyframes slideleft {
 0% {
 -webkit-transform: translateX(100%);
@@ -1704,6 +1709,16 @@ transform: translateX(100%)
 transform: translateX(0)
 }
 }
+@-webkit-keyframes slideleft {
+0% {
+-webkit-transform: translateX(100%);
+transform: translateX(100%)
+}
+100% {
+-webkit-transform: translateX(0);
+transform: translateX(0)
+}
+} 
 
 .slider-btn {
   padding: 10px 40px;
@@ -1755,7 +1770,7 @@ transform: translateX(0)
 
 .breadcrumbs li::before {
   font-family: "symbols-technomart";
-  content:'\3e';
+  content:"\3e";
   font-size: 18px;
   color: #c1c6ce;
   text-decoration: none;
@@ -1766,12 +1781,12 @@ transform: translateX(0)
 }
 
 .breadcrumbs li:first-child::before {
-  content: '';
+  content: "";
 }
 
 .breadcrumbs li:first-child a::before{
   font-family: "symbols-technomart";
-  content:'\1f3e0';
+  content:"\1f3e0";
   font-size: 16px;
   color: #c1c6ce;
   text-decoration: none;
@@ -1788,17 +1803,17 @@ transform: translateX(0)
   text-transform: uppercase;
   background-color: #f2f6f8;
   font-weight: normal;
-  font-family: 'Cuprum', sans-serif;
+  font-family: "Cuprum", sans-serif;
 }
 
 .left-filter {
   padding: 8px 20px;
-  background: #f7f3ec;
+  background-color: #f7f3ec;
 }
 
 .right-filter {
   padding: 8px 0 8px 20px;
-  background: #f7f3ec;
+  background-color: #f7f3ec;
 }
 
 .products {
@@ -1815,7 +1830,7 @@ transform: translateX(0)
   font-weight: bold;
   font-size: 17px;
   padding: 0;
-  font-family: 'PT Sans', 'Arial', sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   margin-bottom: 18px;
 }
 
@@ -1833,12 +1848,14 @@ transform: translateX(0)
 .range-controls .scale {
   margin-top: 39px;
   height: 2px;
-  background: #d7dcde;
+  background-color: #d7dcde;
 }
 
 .range-controls .bar {
   height: 2px;
-  background: #00ca74;
+  background-color: #00ca74;
+  margin-left: 0px;
+  width: 140px;
 }
 
 .range-controls .toggle {
@@ -1848,7 +1865,7 @@ transform: translateX(0)
   width: 4px;
   height: 4px;
   border: 8px solid white;
-  background: #ababab;  
+  background-color: #ababab;  
   cursor: pointer;
   border-radius: 50%;
   box-shadow: 0 2px 1px 0 #d4d1cb;
@@ -1864,7 +1881,7 @@ transform: translateX(0)
   width: 95px;
   padding: 7px;
   border: none;
-  background: #f7f3ec;
+  background-color: #f7f3ec;
   border-radius: 5px;
   outline: none;
   text-align: center;
@@ -1885,7 +1902,7 @@ transform: translateX(0)
   content: "";
   height: 1px;
   width: 10px;
-  background: #000;
+  background-color: #000;
   top: 21px;
   left: 104px;
 }
@@ -1910,7 +1927,7 @@ input[type="checkbox"] + label:last-child {
 }
 
 input[type="checkbox"] + label::before {
-  content: '\2610';
+  content: "\2610";
   font-family: "symbols-technomart";
   position: absolute;
   top: 0;
@@ -1927,7 +1944,7 @@ input[type="checkbox"] + label:hover::before  {
 }
 
 input[type="checkbox"]:checked + label::before {
-  content: '\2611';
+  content: "\2611";
   font-family: "symbols-technomart";
   text-transform: none;
   text-decoration: none;
@@ -1953,7 +1970,7 @@ input[type="radio"] + label:last-child {
 }
 
 input[type="radio"] + label::before {
-  content: '\25cb';
+  content: "\25cb";
   font-family: "symbols-technomart";
   position: absolute;
   top: 0;
@@ -1969,7 +1986,7 @@ input[type="radio"] + label:hover::before {
   color: #b5b5b5;
 }
 input[type="radio"]:checked + label::before {
-  content: '\25cf';
+  content: "\25cf";
   font-family: "symbols-technomart";
   text-transform: none;
   text-decoration: none;
@@ -2004,7 +2021,7 @@ input[type="radio"]:disabled + label{
   padding: 12px 38px;
   margin-top: 33px;
   outline: none;
-  font-family: 'PT Sans', 'Arial', sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
 }
 
 .pagination {
@@ -2068,7 +2085,7 @@ input[type="radio"]:disabled + label{
   font-size: 30px;
   font-weight: normal;
   margin-bottom: 30px;
-  font-family: 'Cuprum', sans-serif;
+  font-family: "Cuprum", sans-serif;
 }
 
 .main .about-product p {
@@ -2079,14 +2096,14 @@ input[type="radio"]:disabled + label{
 }
 
 .main-footer {
-  font-family: 'Cuprum', sans-serif;
+  font-family: "Cuprum", sans-serif;
 }
 
 
 
 .modal-content {
   width: 620px;
-  background: #fff;
+  background-color: #fff;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -2166,7 +2183,7 @@ textarea {
 .modal-container label {
   display: block;
   font-size: 18px;
-  font-family: 'Cuprum', sans-serif;
+  font-family: "Cuprum", sans-serif;
   padding: 7px 0;
 }
 
@@ -2204,7 +2221,7 @@ textarea {
 }
 
 .modal-container-footer {
-  background: #f1f1f1;
+  background-color: #f1f1f1;
   padding: 35px 0;
 }
 
@@ -2228,7 +2245,7 @@ textarea {
   z-index: 10;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .show-popup {
