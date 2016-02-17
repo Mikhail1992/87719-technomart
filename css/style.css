@@ -310,12 +310,14 @@ input {
   width: 218px;
   height: 168px;
   overflow: hidden;
-  line-height: 168px;
+  line-height: 0;
 }
 
 .catalog-item-image img {
   max-width: 100%;
-  vertical-align: middle;
+  height: 168px;
+  width: 218px;
+  text-align: center;
 }
 
 .catalog-item .title {
@@ -336,7 +338,7 @@ input {
 .catalog-item .price {
   position: relative;
   width: 140px;
-  margin: 0 auto 20px;
+  margin: 0 auto 18px;
   padding: 8px 30px;
   color: #fff;
   border-radius: 3px;
@@ -634,6 +636,11 @@ input {
   padding: 12px 50px;
 }
 
+.logo img {
+  width: 116px;
+  height: 18px;
+}
+
 .logo:hover {
   background-color: #ca2c37;
 }
@@ -655,6 +662,11 @@ input {
 .logo-bottom a {
   padding: 20px 20px;
   display: inline-block;
+}
+
+.logo-bottom img {
+  width: 145px;
+  height: 21px;
 }
 
 .main-header {
@@ -1171,7 +1183,7 @@ input:focus ~ label:before {
   position: absolute;
   width: 620px;
   padding: 26px 24px;
-  background: #2a221c url(../img/bgslide.png) no-repeat center top;
+  background: url(../img/bgslide.png) no-repeat center top;
   height: 105px;
 }
 
@@ -1179,7 +1191,7 @@ input:focus ~ label:before {
   position: absolute;
   width: 620px;
   padding: 26px 24px;
-  background: #2a221c url(../img/bgslide2.png) no-repeat center top;
+  background:  url(../img/bgslide2.png) no-repeat center top;
   height: 105px;
 }
 
@@ -1384,7 +1396,7 @@ input:focus ~ label:before {
   color: #000;
   text-transform: uppercase;
   margin-top: 10px;
-  margin-bottom: 30px;
+  margin-bottom: 26px;
   font-family: "Cuprum", sans-serif;
   font-weight: normal;
 }
@@ -1392,7 +1404,7 @@ input:focus ~ label:before {
 .contact p {
   font-size: 13px;
   line-height: 24px;
-  margin: 15px 0 6px;
+  margin: 24px 0 6px;
 }
 
 .default-list {
@@ -1702,21 +1714,21 @@ animation: slideleft .6s forwards;
 @keyframes slideleft {
 0% {
 -webkit-transform: translateX(100%);
-transform: translateX(100%)
+transform: translateX(100%);
 }
 100% {
 -webkit-transform: translateX(0);
-transform: translateX(0)
+transform: translateX(0);
 }
 }
 @-webkit-keyframes slideleft {
 0% {
 -webkit-transform: translateX(100%);
-transform: translateX(100%)
+transform: translateX(100%);
 }
 100% {
 -webkit-transform: translateX(0);
-transform: translateX(0)
+transform: translateX(0);
 }
 } 
 
@@ -2272,6 +2284,21 @@ textarea {
   }
 }
 
+@-webkit-keyframes bounce {
+  0%   {
+    transform: translateY(200px);
+  }
+  70%  {
+    transform: translateY(-30px);
+  }
+  90%  {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
 @keyframes shake {
   0%, 100% {
     transform: translateX(0);
@@ -2283,3 +2310,16 @@ textarea {
     transform: translateX(10px);
   }
 }
+
+@-webkit-keyframes shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translateX(-10px);
+  }
+  20%, 40%, 60%, 80% {
+    transform: translateX(10px);
+  }
+}
+
