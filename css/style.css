@@ -1342,12 +1342,11 @@ input:focus ~ label:before {
   border: 1px solid #e5e5e5;
   text-align: center;
   margin-top: 20px;
-  padding: 10px;
   vertical-align: middle;
 }
 .card-product img{
-  line-height: 140px;
-  vertical-align: top;
+  width: 218px;
+  height: 143px;
 }
 
 .products  .index-product {
